@@ -127,10 +127,10 @@ if(!aUser) return msg.channel.send("Couldn't find users.");
     
     let ac = msg.guild.channels.find(`name`,"القبول-الرفض"); 
     if(!ac) return msg.channel.send("Couldn't find `القبول-الرفض` channel. "); 
-    ac.send(`** [ @• Tur » Support  ]تم بنجاح قبولك  واعطائك رتبة ${aUser}**`)
+    ac.send(`** [ @-     Staff  Trial ✺  ]تم بنجاح قبولك  واعطائك رتبة ${aUser}**`)
 
     msg.delete().catch(O_o=>{});
-    var role = msg.guild.roles.find(`name`, '• Tur » Support');
+    var role = msg.guild.roles.find(`name`, '-     Staff  Trial ✺');
     var role2 = msg.guild.roles.find(`name`, '• Help » Github');
     var role3 = msg.guild.roles.find(`name`, '• Help » Heroku');
     if(!role) return msg.guild.channel.send("Could't find `• Tur » Support` role.");
@@ -161,10 +161,10 @@ if(!aUser) return msg.channel.send("Couldn't find users.");
 
     
     
-    var role = msg.guild.roles.find(`name`, '• Tur » Support');
+    var role = msg.guild.roles.find(`name`, '-     Staff  Trial ✺');
     var role2 = msg.guild.roles.find(`name`, '• Help » Github');
     var role3 = msg.guild.roles.find(`name`, '• Help » Heroku');
-    if(!role) return msg.guild.channel.send("Could't find `• Tur » Support` role.");
+    if(!role) return msg.guild.channel.send("Could't find `-     Staff  Trial ✺` role.");
     aUser.removeRole(role);
     aUser.removeRole(role2);
     aUser.removeRole(role3);
