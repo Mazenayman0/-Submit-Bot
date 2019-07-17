@@ -1,6 +1,35 @@
+  
+const Discord = require('discord.js');
+const moment = require('moment');
+const client = new Discord.Client();
+const giphy = require('giphy-api')();
+const fs = require("fs");
+const prefix = "#";
+const devs = ['587262251346558981' , '' , '' , ''];
+const adminprefix = "#";
+
+client.on('ready', () => {
+    console.log('I am ready!');
+});
+
+client.on('ready', () => {
+   console.log(`----------------`);
+      console.log(`star Bot- Script By : n3k4a `);
+        console.log(`----------------`);
+      console.log(`ON ${client.guilds.size} Servers ' Script By : n3k4a  Codes ' `);
+    console.log(`----------------`);
+  console.log(`Logged in as ${client.user.tag}!`);
+client.user.setGame(`#تقديم`,"http://twitch.tv/S-F")
+client.user.setStatus("dnd")
+ 
+});
+
+
+
+
 
 client.on("message", message => {
-            if(message.content.startsWith("#Submit")) {
+            if(message.content.startsWith("#تقديم")) {
 		if(!message.channel.guild) return;
                 if(message.author.bot) return;
 	    let channel = message.guild.channels.find("name", "التقديمات")///n3k4a is one  
