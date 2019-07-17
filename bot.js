@@ -42,7 +42,7 @@ client.on("message", message => {
                   var name = m1.content;
                   m1.delete();
                   m.edit(message.member + ', **:timer:**').then( (m) =>{
-                      m.edit( message.member + ', **عندك كام سنة 🎓**' )///n3k4a is one  
+                      m.edit( message.member + ', **كم تبلغ من العمر 🎓**' )///n3k4a is one  
                       setTimeout(() => {
                         m.delete()///n3k4a is one  
                       }, 10000);
@@ -51,7 +51,7 @@ client.on("message", message => {
                           var age = m2.content;
                           m2.delete()
                           message.channel.send( message.member + ', **:timer:**').then( (m) =>{
-                            m.edit( message.member + ', **ما هي لغه البرمجة الخاصه بك ؟ 🎙**' )
+                            m.edit( message.member + ', **كم لك في الديسكورد 🤔 ؟*' )
                             setTimeout(() => {///n3k4a is one  
                               m.delete()
                             }, 10000);
@@ -60,7 +60,7 @@ client.on("message", message => {
                                 var ask = m3.content;
                                 m3.delete();
                                 message.channel.send( message.member + ', **:timer:**').then( (m) =>{
-                                  m.edit( message.member + ', **VarوCost هل تعرف الفرق بين  📑**' )///n3k4a is one  
+                                  m.edit( message.member + ', **ليش تبغي تكون واحد من ادارة فيرلس 📑**' )///n3k4a is one  
                                   setTimeout(() => {
                                     m.delete()
                                   }, 10000);
@@ -69,7 +69,7 @@ client.on("message", message => {
                                       var ask2 = m4.content;
                                       m4.delete();///n3k4a is one  
                                       message.channel.send( message.member + ', **:timer:**').then( (m) =>{
-                                        m.edit( message.member + ', **لماذا يجب علينا ان نقبلك ؟ اعطنا كود انت مسويه ؟🤔**' )
+                                        m.edit( message.member + ', **هل ستضع شعارنا (Fr) في إسمك في حالة قبولك 🤔 ؟**' )
                                         m.channel.awaitMessages( m1 => m1.author == message.author,{ maxMatches: 1, time: 60*1000 } ).then ( (m5) => {///n3k4a is one  
                                             m5 = m5.first();
                                             var ask3 = m5.content;
@@ -81,9 +81,9 @@ client.on("message", message => {
                         .setTitle(`**تقديم ادارة** [__**${message.guild.name}**__]`)
                         .addField('**`الاسم`**', `${name}` , true)
                         .addField('**`العمر`**', `${age}` , true)
-                        .addField('**`هما هي لغه البرمجة الخاصه به ؟ `**',`${ask}`)///n3k4a is one  
-                        .addField('**`*VarوCost هل يعرف الفرق بين `**',`${ask2}`)
-                        .addField('**`لماذا يجب علينا ان نقبلك ؟ اعطنا كود انت مسويه ؟🤔`**',`${ask3}`)
+                        .addField('**` كم له في الديسكورد`**',`${ask}`)///n3k4a is one  
+                        .addField('**`ليش يبغى يكون ادري في السيرفر `**',`${ask2}`)
+                        .addField('**`ن`**',`${ask3}`)
                         .setFooter(message.author.username,'https://images-ext-2.discordapp.net/external/JpyzxW2wMRG2874gSTdNTpC_q9AHl8x8V4SMmtRtlVk/https/orcid.org/sites/default/files/files/ID_symbol_B-W_128x128.gif')
                         channel.send(embed)
                         }, 2500);///n3k4a is one  
